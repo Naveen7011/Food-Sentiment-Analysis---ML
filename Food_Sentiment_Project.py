@@ -32,8 +32,12 @@ h1, h2, h3 {
 st.markdown("""
 <style>
 header[data-testid="stHeader"] {
-background: linear-gradient(to right,#141E30,#243B55,#3A7BD5);
-border-bottom: 2px solid #2A5298;
+    background: linear-gradient(
+        to right,
+        rgba(15,32,39,0.6),
+        rgba(32,58,67,0.6),
+        rgba(44,83,100,0.6)
+    );
 }
 </style>
 """, unsafe_allow_html=True)
