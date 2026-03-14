@@ -181,7 +181,7 @@ with col2:
 
     with open("Food_review_Sample_File1.csv","rb") as f1:
             st.download_button(
-            "Download Food Review Sample1 CSV",
+            "Download Food Review Sample1.CSV",
             data=f1,
             file_name="Food_review_Sample_File1.csv",
             mime="text/csv"
@@ -189,7 +189,7 @@ with col2:
 
     with open("Food_review_Sample_File2.csv","rb") as f2:
              st.download_button(
-            "Download Food Review Sample2 CSV",
+            "Download Food Review Sample2.CSV",
             data=f2,
             file_name="Food_review_Sample_File2.csv",
             mime="text/csv"
