@@ -8,6 +8,14 @@ model=joblib.load("sentiment_model.pkl")
 
 st.set_page_config(layout="wide")
 
+st.markdown("""
+<style>
+h1, h2, h3, h4, h5, h6 {
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Sidebar Background Color
 st.markdown("""
 <style>
