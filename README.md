@@ -12,3 +12,7 @@ Features
 Technologies Used
 
 Python • Pandas • NumPy • Scikit-learn • NLP • Streamlit
+
+Use Case
+
+Helps analyze customer feedback and food reviews automatically.
