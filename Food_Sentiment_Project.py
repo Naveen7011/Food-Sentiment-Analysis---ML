@@ -174,7 +174,7 @@ with col1:
 
 # RIGHT COLUMN
 with col2:
-    st.subheader("📂 Sample File Format")
+    st.subheader(" Sample Format")
 
     sample_data = pd.DataFrame({
         "review": [
