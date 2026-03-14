@@ -145,6 +145,7 @@ with col1:
         else:
             st.success("Sentiment = Positive 👍")
             st.warning(f"Confidence Score = {prob[0][1]:.2f}")
+            st.balloons() 
 
     # st.markdown("")
     st.write("")
