@@ -157,7 +157,6 @@ with col1:
     file = st.file_uploader("Select a csv file", type=["csv","txt"])
 
     if file:
-        bytes_data = file.read()
         df = pd.read_csv(io.BytesIO(file.getvalue()),header=None, names=["Review"])
 
        # df = pd.read_csv(file, header=None, names=["Review"])
