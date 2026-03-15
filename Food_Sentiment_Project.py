@@ -193,7 +193,7 @@ with col2:
     st.dataframe(sample_data, hide_index=True)
   
     
-    st.subheader("📥 Download Sample File for Bulk Prediction")
+    st.subheader("📥 Download Sample File for Bulk Prediction below 👇")
 
     with open("Food_review_Sample_File1.csv","rb") as f1:
             st.download_button(
