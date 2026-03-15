@@ -156,7 +156,10 @@ with col1:
     file = st.file_uploader("Select a csv file", type=["csv","txt"])
 
     if file:
-        df = pd.read_csv(file, header=None, names=["Review"])
+        bytes_data = file.read()
+        df = pd.read_csv(io.BytesIO(bytes_data), header=None, names=["Review"])
+
+       # df = pd.read_csv(file, header=None, names=["Review"])
 
         placeholder = st.empty()
         placeholder.dataframe(df, hide_index=True)
