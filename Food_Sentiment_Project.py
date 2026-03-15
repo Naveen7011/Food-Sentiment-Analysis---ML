@@ -158,7 +158,7 @@ with col1:
 
     if file:
         bytes_data = file.read()
-        df = pd.read_csv(io.BytesIO(bytes_data), header=None, names=["Review"])
+        df = pd.read_csv(io.BytesIO(file.getvalue()),header=None, names=["Review"])
 
        # df = pd.read_csv(file, header=None, names=["Review"])
 
