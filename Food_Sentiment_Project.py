@@ -161,7 +161,7 @@ with col1:
         placeholder = st.empty()
         placeholder.dataframe(df, hide_index=True)
 
-        if st.button("Bulk Prediction"):
+        if st.button("Bulk Prediction",key="bulk_predict"):
             X_test = vectorizer.transform(df.Review)
             pred = model.predict(X_test)
             prob = model.predict_proba(X_test)
