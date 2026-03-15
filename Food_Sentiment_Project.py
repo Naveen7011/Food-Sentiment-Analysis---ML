@@ -2,6 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 import numpy as np
+import io
 
 vectorizer=joblib.load("vectorizer.pkl")
 model=joblib.load("sentiment_model.pkl")
