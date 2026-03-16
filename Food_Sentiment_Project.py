@@ -154,7 +154,7 @@ with col1:
 
     st.header("Predict Bulk Reviews from CSV")
 
-    file = st.file_uploader("Select a csv file", type=["csv","txt"])
+    file = st.file_uploader("Select a csv file", type=["csv","txt"],key="bulk_upload")
 
     if file:
         df = pd.read_csv(io.BytesIO(file.getvalue()),header=None, names=["Review"])
